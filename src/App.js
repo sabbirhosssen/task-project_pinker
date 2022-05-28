@@ -1,12 +1,22 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Login from './Components/Authentication/Login/Login';
-import Singup from './Components/Authentication/Singup/Singup';
+import Signup from './Components/Authentication/Signup/Signup';
+import Header from './Components/page/Header/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Login/>
-      <Singup/>
+      
+      <Routes>
+        <Route path="login" element={<Login/>} />
+        <Route path="signup" element={<Signup/>} />
+      </Routes>
+    
+      
+      
     </div>
   );
 }

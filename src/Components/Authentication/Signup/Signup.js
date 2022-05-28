@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Form, Image } from 'react-bootstrap';
-import './Singup.css';
+import './Signup.css';
 const Singup = () => {
     return (
         <div>
